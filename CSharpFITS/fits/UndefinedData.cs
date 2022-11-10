@@ -14,11 +14,12 @@ namespace nom.tam.fits
     using System;
     using System.IO;
 	using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
 
-	/// <summary>This class provides a simple holder for data which is
-	/// not handled by other classes.
-	/// </summary>
-	public class UndefinedData:Data
+    /// <summary>This class provides a simple holder for data which is
+    /// not handled by other classes.
+    /// </summary>
+    public class UndefinedData:Data
 	{
     #region Properties
 		/// <summary>Get the size in bytes of the data</summary>

@@ -13,11 +13,12 @@ namespace nom.tam.fits
     using System;
     using System.IO;
 	using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
     /// <summary>This class supports the FITS heap.  This
-	/// is currently used for variable length columns
+    /// is currently used for variable length columns
     /// in binary tables.</summary>
-	
-	public class FitsHeap : FitsElement
+
+    public class FitsHeap : FitsElement
 	{
     #region Properties
         /// <summary>

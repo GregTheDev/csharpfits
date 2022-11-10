@@ -17,12 +17,13 @@ namespace nom.tam.fits
     using System.Collections;
     using System.IO;
     using nom.tam.util;
-    	
-	/// <summary>This class describes methods to access and manipulate the header
-	/// for a FITS HDU. This class does not include code specific
-	/// to particular types of HDU.
+    using RandomAccess = util.RandomAccess;
+
+    /// <summary>This class describes methods to access and manipulate the header
+    /// for a FITS HDU. This class does not include code specific
+    /// to particular types of HDU.
     /// </summary>
-	public class Header : FitsElement
+    public class Header : FitsElement
 	{
     #region Properties
         /// <summary>Can the header be rewritten without rewriting the entire file?</summary>

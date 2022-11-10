@@ -13,6 +13,7 @@ namespace nom.tam.image
     using System;
     using System.IO;
 	using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
 
     /// <summary>The ImageTiler class allows users to extract subimages from a FITS primary image 
     /// or image extension.

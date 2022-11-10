@@ -16,19 +16,20 @@ namespace nom.tam.fits
     using System;
     using System.IO;
 	using nom.tam.image;
-	/// <summary>This class instantiates FITS primary HDU and IMAGE extension data.
-	/// Essentially these data are a primitive multi-dimensional array.
-	/// <p>
-	/// Starting in version 0.9 of the nom.tam FITS library, this routine
-	/// allows users to defer the reading of images if the FITS
-	/// data is being read from a file.  An ImageTiler object is
-	/// supplied which can return an arbitrary subset of the image
-	/// as a one dimensional array.A call to the getData() method
-	/// will still return a multi-dimensional array, but the
-	/// image data will not be read until the user explicitly requests.
-	/// it.</p>
+    using RandomAccess = util.RandomAccess;
+    /// <summary>This class instantiates FITS primary HDU and IMAGE extension data.
+    /// Essentially these data are a primitive multi-dimensional array.
+    /// <p>
+    /// Starting in version 0.9 of the nom.tam FITS library, this routine
+    /// allows users to defer the reading of images if the FITS
+    /// data is being read from a file.  An ImageTiler object is
+    /// supplied which can return an arbitrary subset of the image
+    /// as a one dimensional array.A call to the getData() method
+    /// will still return a multi-dimensional array, but the
+    /// image data will not be read until the user explicitly requests.
+    /// it.</p>
     /// </summary>
-	public class ImageData:Data
+    public class ImageData:Data
 	{
         /// <summary>Get the size in bytes of the data 
         /// </summary>

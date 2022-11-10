@@ -16,6 +16,7 @@ namespace nom.tam.fits
     using System.Net;
     using System.Collections;
     using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
 
     /// <summary>This class comprises static
 	/// utility functions used throughout

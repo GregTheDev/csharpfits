@@ -21,6 +21,7 @@ namespace nom.tam.fits
     using System.IO;
     using System.ComponentModel;
     using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
 
     /// <summary>
     /// This class defines the methods for accessing FITS binary table data.

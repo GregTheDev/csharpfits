@@ -15,9 +15,11 @@ namespace nom.tam.fits
 	using System;
     using System.IO;
 	using nom.tam.util;
+    using RandomAccess = util.RandomAccess;
+
     /// <summary>This class provides methods to access the data segment of an HDU.</summary>
-	
-	public abstract class Data : FitsElement
+
+    public abstract class Data : FitsElement
 	{
     #region Properties
         /// <summary>
